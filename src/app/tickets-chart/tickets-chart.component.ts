@@ -5,7 +5,7 @@ import { TicketService } from '../services/ticket.service';
 export type ChartOptions = {
   series: ApexNonAxisChartSeries;
   chart: ApexChart;
-  responsive: ApexResponsive[]; // Make sure it's always an array
+  responsive: ApexResponsive[];
   labels: any;
   legend: ApexLegend;
 };
@@ -23,7 +23,7 @@ export class TicketsChartComponent implements OnInit {
       width: 380
     },
     labels: [],
-    responsive: [ // Initialize with a valid value to avoid undefined
+    responsive: [ 
       {
         breakpoint: 480,
         options: {
@@ -52,7 +52,7 @@ export class TicketsChartComponent implements OnInit {
         }
       });
 
-      // Update chart data
+      
       this.chartOptions.series = Array.from(teamMap.values()) as ApexNonAxisChartSeries;
       this.chartOptions.labels = Array.from(teamMap.keys());
     });
