@@ -1,5 +1,9 @@
 Check the production link https://yashu7372.github.io/frontend_topaz/
 
+1) created the angular 13 with the following requirement given in the file
+2) added the components for the dashboard,stat,table and chart
+3) run the npm start command to run the application
+
 
 
 # FrontendTopaz
