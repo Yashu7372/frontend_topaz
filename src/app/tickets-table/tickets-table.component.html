@@ -1,0 +1,15 @@
+<p class="table-title">Tickets Table</p>
+<table class="tickets-table">
+    <thead>
+      <tr>
+        <th class="header-cell">Support Rep</th>
+        <th class="header-cell">Open Tickets</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let ticket of ticketData" class="data-row">
+        <td class="data-cell">{{ ticket.supportRep }}</td>
+        <td class="data-cell">{{ ticket.openTickets }}</td>
+      </tr>
+    </tbody>
+</table>

@@ -1,0 +1,31 @@
+.stat-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.stat-card.open-tickets {
+    background-color: rgb(114, 114, 253); /* Light red */
+}
+
+.stat-card.unassigned-tickets {
+    background-color: #ffffcc; /* Light yellow */
+}
+
+.stat-card.high-priority-tickets {
+    background-color: #ff9999; /* Medium red */
+}
+
+.stat-card.open-change-requests {
+    background-color: #ccffcc; /* Light green */
+}
